@@ -1,0 +1,81 @@
+<html>
+<head></head>
+<body style="margin-top: 80px;margin-left: 20px">
+	
+	
+		
+	 
+	
+	 <%= form_tag({ controller:'real', :action => 'adminhome'}, :multipart => true) do %>
+		<h1><label class="control-label">
+		<center>Add Details</center>
+		</label></h1>
+	<div class="wellside"style="background-color:#FBFBEF;padding-left:20px;padding-right:20px;padding-top:10px;padding-bottom:10px">
+	
+				
+				</div>
+			</div> 
+			<br>
+			<br>
+
+	<label class="control-label">
+		Address
+		</label><%= text_field_tag(:address,"") %><br/>
+		
+		
+	
+	<label class="control-label">
+		Company name
+		</label>
+		<%= text_field_tag(:company,"") %><br/>
+	
+	<label class="control-label">
+		Phone
+	</label>
+		<%= text_field_tag(:phone,"") %><br/>
+		
+	
+	<p><label for="Upload_image1">Select Logo</label>
+		<%= file_field 'upload', 'file' %></p>
+	
+	<p><label for="Upload_image1">Select Image 1</label>
+		<%= file_field 'upload1', 'file1' %></p>
+		
+	<p><label for="Upload_image2">Select Image 2</label>
+		<%= file_field 'upload2', 'file2' %></p>
+		
+	<p><label for="Upload_image3">Select Image 3</label>
+		<%= file_field 'upload3', 'file3' %></p>
+		
+	<p><label for="Upload_image4">Select Image 4</label>
+		<%= file_field 'upload4', 'file4' %></p>
+		
+	<p><label for="Upload_image5">Select Image 5</label>
+		<%= file_field 'upload5', 'file5' %></p>
+		
+		
+		
+		
+		
+		
+		
+
+				<%= submit_tag("submit",  :value => "submit",:class=>"btn btn-primary") %>	
+				<%= submit_tag("preview",  :value => "preview",:class=>"btn btn-primary") %>	
+				
+			<% end %>
+			
+			
+	
+	
+	
+		
+	</div>
+	
+</div>
+	
+	
+	
+
+</body>
+</html>

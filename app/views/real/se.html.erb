@@ -1,0 +1,108 @@
+<html>
+<body style="margin-top: 28px;">
+
+	<div class="row" style="padding-right:20px;padding-left:10px;padding-top:10px;"> 
+	
+		
+		
+		
+	 <div class="span3" ><div class="wellside"style="background-color:#FBFBEF;padding-left:20px;padding-right:20px;padding-top:10px;padding-bottom:10px"><h4 class="side_heading">Refine Search</h4><hr style="margin:0px;"><div style="padding-top:10px;"><form class="form-search">
+  <input type="text" class="input-medium search-query">
+  <button type="submit" class="btn btn-warning">Search</button>
+</form></div></div>
+<br><br>
+<div class="wellside"style="background-color:#FBFBEF;padding-left:20px;padding-right:20px;padding-top:10px;padding-bottom:10px"><h4 class="side_heading">Filter</h4><hr style="margin:0px;"><h4 class="side_heading">Browse by Category</h4><hr style="margin:0px;"><div style="padding-top:10px;"><ul class="nav nav-tabs nav-stacked">
+  <li>
+    <%= link_to "Residential", {:controller => :real, :action => :residential}, {:method => :post }%>
+  </li>
+  <li>
+    <a href="#">Industrial</a>
+  </li>
+  <li>
+    <a href="#">Land</a>
+  </li>
+   <li>
+    <a href="#">Commercial</a>
+  </li>
+
+  <li>
+    <a href="#">Foreclosures</a>
+  </li>
+    <li>
+    <a href="#"> Muiplex / Income Property</a>
+  </li>
+
+
+
+</ul></div></div> 
+<br><br>
+<div class="wellside"style="background-color:#FBFBEF;padding-left:20px;padding-right:20px;padding-top:20px;padding-bottom:20px"><h4 class="side_heading">Filter</h4><hr style="margin:0px;"><div style="padding-top:10px;"><div class="controls">
+              <label class="checkbox" >
+                <input type="checkbox"  value="option1">
+               Rental
+              </label>
+               <label class="checkbox">
+                <input type="checkbox"  value="option2">
+                For Sale
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" value="option3">
+Condo       </label>
+             <label class="checkbox">
+                <input type="checkbox"  value="option4">
+                Apartment
+              </label> <label class="checkbox">
+                <input type="checkbox"  value="option5">
+                Duplex
+              </label> <label class="checkbox">
+                <input type="checkbox"  value="option1">
+               Triplex
+              </label>
+
+              <div style="padding:20px;"><label>Bedrooms</label><input class="span1" type="text" placeholder="from"> to <input class="span1" type="text" placeholder="to"></div>
+
+
+              </div><div class="caption">
+  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+  <div class="form-actions">
+    <a href="#" class="btn btn-danger">Reset</a>
+    <a href="#" class="btn">Search</a>
+  </div>
+</div></div></div>
+
+</div>
+	
+	
+		<div>  
+			<div id="container" style="height:1200px;width:630px;padding-left:20px;background-color:#FBFBEF; float: right;">
+				<div class="wellside">
+					<div class="alert">
+						<div class="page-schres">
+							<h4>
+								<small> 145</small> Search Results for "House"
+
+							</h4>
+						</div>
+					</div>
+				</div>	
+				
+				
+				<%=@t%>
+			</div>
+		
+		
+		
+		
+	   
+			
+	   
+	</div>
+
+
+	
+	
+	
+		
+
+</body>
+</html>

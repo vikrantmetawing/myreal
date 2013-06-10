@@ -1,0 +1,92 @@
+<html>
+<head></head>
+<body style="margin-top: 80px;margin-left: 20px">
+
+
+<div class="row" style="height:900px; width:700px;padding-bottom:20px">
+   <div class="span5" style="float:left;height:900px; width:700px;">
+		<%= form_tag("/real/adminlogin/", :method=>"put") do %>
+		
+		 <fieldset style="height: 900px;width:500px; background-color: #F7F2E0; color: #000000; border: 2px solid black;padding-left:20px">
+		<br>
+		<br>
+		<br>
+		<br>
+	
+		<tab id=t1><h1>Add Properties </h1>
+		<hr>
+		
+				
+		<br>
+		<br>
+		 <label class="control-label">
+		Property Id
+		<span class="required">*</span>
+		</label>
+		<%= text_field_tag(:propertyid,"") %><br/>
+		
+		<label class="control-label">
+		property Name
+		<span class="required">*</span>
+		</label>
+		<%= text_field_tag(:propertyname,"") %><br/>
+		
+		<label class="control-label">
+		Price
+		<span class="required">*</span>
+		</label>
+		<%= text_field_tag(:price,"") %><br/>
+		
+		<label class="control-label">
+		State
+		<span class="required">*</span>
+		</label>
+		<%= text_field_tag(:state,"") %><br/>
+		
+		<label class="control-label">
+		property Type
+		<span class="required">*</span>
+		</label>
+		<%= text_field_tag(:property_type,"") %><br/>
+		
+		<label class="control-label">
+		Sub Property Type
+		<span class="required">*</span>
+		</label>
+		<%= text_field_tag(:subpropertytype,"") %><br/>
+		
+		<label class="control-label">
+		Purpose
+		<span class="required">*</span>
+		</label>
+		<%= text_field_tag(:purpose,"") %><br/>
+		
+		<label class="control-label">
+		Bedroom
+		<span class="required">*</span>
+		</label>
+		<%= text_field_tag(:bedroom,"") %><br/>
+		
+		
+		<p><label for="Upload_image">Select Image</label>
+		<%= file_field 'upload', 'file' %></p>
+
+		
+		<br>
+		
+		
+		<%= submit_tag("upload",  :value => "upload",:class=>"btn btn-primary") %>		
+		
+		<br>
+		<br>
+		
+		
+		
+		</fieldset>
+		<% end %>
+		
+	</div>
+</div>
+
+</body>
+</html>

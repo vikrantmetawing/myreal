@@ -1,0 +1,61 @@
+<html>
+<head></head>
+<body style="margin-top: 80px;margin-left: 20px">
+
+
+
+	<div>  
+			<div id="container" style="height:1200px;width:950px;padding-left:20px;background-color:#FBFBEF; float: right;">
+				<div class="wellside">
+					<div class="alert">
+						<div class="page-schres">
+							<h4>
+								<small> </small> Search Results 
+								
+							
+
+							</h4>
+						</div>
+					</div>
+				</div>	
+				
+				<%= form_tag("/real/storyparticular/", :method=>"post") do %>
+				
+				<ul class="thumbnails">
+				
+		
+				<%@t.each do |i|%>
+					<li class="span2">
+					<div id="image1" class="thumbnail"  style="background-color:#FFFFFF;>
+      
+	   
+						<%= link_to image_tag(i.image, :width => 225, :height => 175), :controller => "real",:action => 'conta', :id => @profile ,:s_id=>i.id %>
+							<div class="caption">
+								
+								
+								
+								
+								
+								<font size="7"><h4><%=link_to i.name, :controller => "real", :action => "storyparticular", :id => @profile,:name => i.id, :method => :post,:s_id=>i.id, :u_id=>i.user_id%></h4></font>
+	
+								
+
+								<br>
+								
+							</div>
+							
+							
+					</div>
+					</li>
+				<%end%>
+				
+				
+					
+				<%end%>
+				</ul>
+				
+				
+			</div>
+		
+</body>
+</html>

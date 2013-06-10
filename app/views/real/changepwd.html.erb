@@ -1,0 +1,55 @@
+<html>
+<head></head>
+<body style="margin-top: 80px;margin-left: 20px">
+
+
+<div class="row" style="height:500px; width:700px;padding-bottom:20px">
+   <div class="span5" style="float:left;height:500px; width:700px;">
+		<%= form_tag("/real/login/", :method=>"post") do %>
+		
+		 <fieldset style="height: 500px;width:500px; background-color: #F7F2E0; color: #000000; border: 2px solid black;padding-left:20px">
+		<br>
+		<br>
+		<br>
+		<br>
+	
+		<tab id=t1><h1>Change Password </h1>
+		<hr>
+		
+				
+		<br>
+		<br>
+		 <label class="control-label">
+		Current Password
+		<span class="required">*</span>
+		</label>
+		<%= text_field_tag(:currentpwd,"") %><br/>
+		
+		<label class="control-label">
+		New Password
+		<span class="required">*</span>
+		</label>
+		<%= text_field_tag(:newpwd,"") %><br/>
+		
+		
+	
+
+		
+		<br>
+		
+		
+		<%= submit_tag("upload",  :value => "upload",:class => "btn btn-primary") %>		
+		
+		<br>
+		<br>
+		
+		
+		
+		</fieldset>
+		<% end %>
+		
+	</div>
+</div>
+		
+</body>
+</html>

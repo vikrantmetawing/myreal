@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  property_name: MyString
+  price: 1
+  state: MyString
+  property_type: MyString
+  purpose: MyString
+  bedroom: 1
+  image: MyString
+  property_id: 1
+
+two:
+  property_name: MyString
+  price: 1
+  state: MyString
+  property_type: MyString
+  purpose: MyString
+  bedroom: 1
+  image: MyString
+  property_id: 1

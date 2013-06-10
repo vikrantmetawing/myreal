@@ -1,0 +1,67 @@
+ 
+  <html>
+  <head>
+  </head>
+	<body style="margin-top: 10px;">
+
+	<div class="row" style="height:80%; width:100%;">
+   <div style="float:left;height:100%; width:80%;padding-left:3%;">
+   
+	
+	<%= form_tag({ controller:'real', :action => 'adminhome'}, :multipart => true) do %>
+		
+		 <fieldset style="height: 100%;width:100%; background-color: ; color: #000000; border: 2px solid black;padding-left:20px;background-image:
+		url('/images/back1.jpg');">
+		<br>
+		<br>
+		<br>
+		<br>
+	
+		<tab id=t1><h1>Enter Your Company Details </h1></tab>
+		<hr>
+	
+		<br>
+		 <label class="control-label">
+		Company Image:
+		</label>
+		
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="Upload_image">Select Image </label>
+		<%= file_field 'upload', 'file' %></p>
+			<br>
+			<br>
+		
+		<label class="control-label" for="textarea">
+		Company Details:
+		
+		</label>
+		<br>
+		<div class="controls">
+		<TEXTAREA NAME="d" COLS=100 ROWS=10></TEXTAREA>
+		
+		
+		
+		
+		<br>
+		
+		
+		</div>
+		<%= submit_tag("upload", :value => "upload", :class=>"btn btn-primary") %>
+		 
+		<br>
+		<br>
+		
+		
+		
+		</fieldset>
+		<% end %>
+	</div>
+
+	
+</div>
+
+
+
+
+</body>
+</html>
+ 
